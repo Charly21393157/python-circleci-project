@@ -9,12 +9,11 @@ jobs:
     steps:
       - checkout
 
-      # Instalar dependencias si es necesario (en este caso no hay ninguna)
+      # Ejecutar el script de Python
       - run:
-          name: Ejecutar Hola Mundo
+          name: Ejecutar math_operations.py
           command: |
-            echo 'print("Hola Mundo")' > hola_mundo.py
-            python hola_mundo.py
+            python math_operations.py
 
 workflows:
   build-deploy:
